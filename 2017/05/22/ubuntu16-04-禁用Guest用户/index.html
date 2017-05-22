@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//haic.me">
   <title>ubuntu16.04 禁用Guest用户 | HaiC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf 3、在打开的窗口中输入[SeatDefaults]allow-guest=false 4、保存，重启系统，即可禁用Guest用户">
+  <meta name="description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
 <meta name="keywords" content="备忘录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu16.04 禁用Guest用户">
 <meta property="og:url" content="//haic.me/2017/05/22/ubuntu16-04-禁用Guest用户/index.html">
 <meta property="og:site_name" content="HaiC">
-<meta property="og:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf 3、在打开的窗口中输入[SeatDefaults]allow-guest=false 4、保存，重启系统，即可禁用Guest用户">
-<meta property="og:updated_time" content="2017-05-22T03:27:28.602Z">
+<meta property="og:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
+<meta property="og:updated_time" content="2017-05-22T04:57:05.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu16.04 禁用Guest用户">
-<meta name="twitter:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf 3、在打开的窗口中输入[SeatDefaults]allow-guest=false 4、保存，重启系统，即可禁用Guest用户">
+<meta name="twitter:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -48,7 +48,7 @@
 			<img src="/assets/img/tx.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">HaiC</a></h1>
+		  <h1 class="header-author"><a href="/">null</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">Haic&#39;s daily life</p>
@@ -102,7 +102,7 @@
 				<img src="/assets/img/tx.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">HaiC</h1>
+			  <h1 class="header-author js-header-author">null</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Haic&#39;s daily life<i class="icon icon-quo-right"></i></p>
@@ -165,8 +165,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>1、打开终端</p>
-<p>2、编辑50-no-guest.conf文件，按照以下命令编辑，<br>sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf</p>
-<p>3、在打开的窗口中输入<br>[SeatDefaults]<br>allow-guest=false</p>
+<p>2、编辑50-no-guest.conf文件，按照以下命令编辑，</p>
+<blockquote>
+<p><code>sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf</code></p>
+</blockquote>
+<p>3、在打开的窗口中输入</p>
+<blockquote>
+<ul>
+<li><code>[SeatDefaults]</code></li>
+<li><code>allow-guest=false</code></li>
+</ul>
+</blockquote>
 <p>4、保存，重启系统，即可禁用Guest用户</p>
 
       
