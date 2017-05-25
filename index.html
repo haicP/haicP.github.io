@@ -52,7 +52,7 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">HOME</a></li>
+				<li><a href="/">主页</a></li>
 	        
 			</ul>
 		</nav>
@@ -124,7 +124,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">HOME</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -140,6 +140,94 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-新安装sublime需要安装的插件及优化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/23/新安装sublime需要安装的插件及优化/">新安装sublime需要安装的插件及优化</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/23/新安装sublime需要安装的插件及优化/" class="archive-article-date">
+  	<time datetime="2017-05-23T11:02:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本来想说首先要解决汉化问题的（对于我这个英语文盲），然后发现，不能打字什么鬼，才发现sublime是支持中文输入的。。。WTF！<br>好了，现在容我隆重介绍解决中文输入问题的方法↓↓↓</p>
+<p>###ubuntu下sublime解决中文输入法</p>
+<pre><code>1. 更新并升级系统为最新(较新的系统会解决很多可能出现的问题)
+</code></pre><p><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></p>
+<pre><code>2.克隆项目到本地 :
+</code></pre><p><code>git clone https://github.com/lyfeyaj/sublime-text-imfix.git</code></p>
+<pre><code>3.运行脚本 :
+</code></pre><p><code>cd sublime-text-imfix &amp;&amp; ./sublime-imfix</code></p>
+<pre><code>4.完成! 重新启动后就可以在 Sublime Text 2/3 中 使用 Fcitx了
+
+然后中英文不能对齐的问题也一并解决了吧，这其实是字体的问题↓↓↓
+</code></pre><blockquote>
+<p>打开首选项。。额 还没汉化，那下面汉化了再来解决这个问题。。。。。</p>
+</blockquote>
+<p>###汉化问题</p>
+<blockquote>
+<p>先安装package control 懒得码字，谷歌百度找安装方法<br>然后快捷键Ctrl+shift+p 输入install。。。<br>再在新打开的窗口中输入Chinese 。。。回车安装就行了<br>//字体不能对齐的设置在首选项→设置→在用户自定义里面添加一句</p>
+</blockquote>
+<p>###主题安装</p>
+<blockquote>
+<p>还是包管理，搜索主题名字回车安装就好 推荐一款predawn</p>
+</blockquote>
+<p>###其他插件</p>
+<blockquote>
+<p>额，，我还没开始用，后面用到好的再贴上来。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">sublime</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">插件</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/23/新安装sublime需要安装的插件及优化/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
   
     <article id="post-总结一下github（or-coding）-hexo搭建博客的心得" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -171,7 +259,7 @@
 </blockquote>
 <p> 3.搭建Node.js环境</p>
 <blockquote>
-<p>linux:<br><code>sudo apt install nodejs</code><br>然鹅，这样安装只是4.x版本的，node都6.x了 强迫症的（比如我）必须捣鼓到最新版。<br>第1步：添加NodeJS的PPA<br>首先，你需要Node.js PPA在我们的系统的NodeJS官方网站提供通过。我们还需要如果尚未安装安装python-software-properties。<br><code>sudo apt-get install python-software-properties</code><br><code>curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -</code><br>第2步：安装Node.js和NPM<br>添加PPA文件后，让安装NodeJS。 NPM还将与node.js中安装这个命令也将在系统上安装其他许多依赖包。<br>//在这之前更新一下软件包 sudo apt update<br><code>sudo apt-get install nodejs</code><br>第3步：检查Node.js和NPM版本<br><code>node -v</code><br>同时检查NPM的版本。<br><code>npm -v</code></p>
+<p>linux:<br><code>sudo apt install nodejs</code><br>然鹅，这样安装只是4.x版本的，node都6.x了 强迫症的（比如我）必须捣鼓到最新版。<br>第1步：添加NodeJS的PPA<br>首先，你需要Node.js PPA在我们的系统的NodeJS官方网站提供通过。我们还需要如果尚未安装安装python-software-properties。<br><code>sudo apt-get install python-software-properties</code><br><code>curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -</code><br>第2步：安装Node.js和NPM<br>添加PPA文件后，让安装NodeJS。 NPM还将与node.js中安装这个命令也将在系统上安装其他许多依赖包。<br>//在这之前更新一下软件包 <code>sudo apt update</code><br><code>sudo apt-get install nodejs</code><br>第3步：检查Node.js和NPM版本<br><code>node -v</code><br>同时检查NPM的版本。<br><code>npm -v</code></p>
 </blockquote>
 <p>4.安装HEXO</p>
 <blockquote>
@@ -423,6 +511,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">禁用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">sublime</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
               </li>
              
               <li class="article-tag-list-item">
