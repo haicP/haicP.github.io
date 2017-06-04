@@ -141,6 +141,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-onmousemove和onmouseover事件的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/04/onmousemove和onmouseover事件的区别/">onmousemove和onmouseover事件的区别</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/04/onmousemove和onmouseover事件的区别/" class="archive-article-date">
+  	<time datetime="2017-06-04T10:53:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>onmouseover 意思是如果鼠标指针在该元素的上面就触发<br>onmousemove 意思是如果鼠标指针在该元素的上面移动就触发<br>很显然，“物体A在物体B的上面”跟“物体A在物体B的上面移动”是两种完全不同的状态（或者说概念），前者不管怎么变化，只要物体A仍然在物体B的上面，这个状态就不会改变的，而后者就不同了，每一次移动都会造成坐标的改变，就是说每次移动都会造成状态改变的。<br>总结以上所述就是：onmouseover只触发一次（只要鼠标移动到元素上面就触发）；onmousemove会不断触发（只要鼠标在元素上面并且移动了鼠标就触发）。<br>一般情况下只需用onmouseover即可，特殊情况才用onmousemove（因为这个比较耗资源），比如需要监控鼠标坐标的变化。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/04/onmousemove和onmouseover事件的区别/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-安装Docky" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -456,85 +519,10 @@
 
 
   
-    <article id="post-ubuntu16-04-禁用Guest用户" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/22/ubuntu16-04-禁用Guest用户/">ubuntu16.04 禁用Guest用户</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/22/ubuntu16-04-禁用Guest用户/" class="archive-article-date">
-  	<time datetime="2017-05-22T03:16:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、打开终端</p>
-<p>2、编辑50-no-guest.conf文件，按照以下命令编辑，</p>
-<blockquote>
-<p><code>sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf</code></p>
-</blockquote>
-<p>3、在打开的窗口中输入</p>
-<blockquote>
-<ul>
-<li><code>[SeatDefaults]</code></li>
-<li><code>allow-guest=false</code></li>
-</ul>
-</blockquote>
-<p>4、保存，重启系统，即可禁用Guest用户</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">备忘录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">禁用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/22/ubuntu16-04-禁用Guest用户/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -657,6 +645,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">你</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
             
             <div class="clearfix"></div>

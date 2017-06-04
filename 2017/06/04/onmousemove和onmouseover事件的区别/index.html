@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//haic.me">
-  <title>ubuntu16.04 禁用Guest用户 | HaiC</title>
+  <title>onmousemove和onmouseover事件的区别 | HaiC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
-<meta name="keywords" content="备忘录,ubuntu,禁用">
+  <meta name="description" content="onmouseover 意思是如果鼠标指针在该元素的上面就触发onmousemove 意思是如果鼠标指针在该元素的上面移动就触发很显然，“物体A在物体B的上面”跟“物体A在物体B的上面移动”是两种完全不同的状态（或者说概念），前者不管怎么变化，只要物体A仍然在物体B的上面，这个状态就不会改变的，而后者就不同了，每一次移动都会造成坐标的改变，就是说每次移动都会造成状态改变的。总结以上所述就是：onm">
+<meta name="keywords" content="js,学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu16.04 禁用Guest用户">
-<meta property="og:url" content="//haic.me/2017/05/22/ubuntu16-04-禁用Guest用户/index.html">
+<meta property="og:title" content="onmousemove和onmouseover事件的区别">
+<meta property="og:url" content="//haic.me/2017/06/04/onmousemove和onmouseover事件的区别/index.html">
 <meta property="og:site_name" content="HaiC">
-<meta property="og:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
-<meta property="og:updated_time" content="2017-05-22T05:40:32.200Z">
+<meta property="og:description" content="onmouseover 意思是如果鼠标指针在该元素的上面就触发onmousemove 意思是如果鼠标指针在该元素的上面移动就触发很显然，“物体A在物体B的上面”跟“物体A在物体B的上面移动”是两种完全不同的状态（或者说概念），前者不管怎么变化，只要物体A仍然在物体B的上面，这个状态就不会改变的，而后者就不同了，每一次移动都会造成坐标的改变，就是说每次移动都会造成状态改变的。总结以上所述就是：onm">
+<meta property="og:updated_time" content="2017-06-04T10:57:19.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ubuntu16.04 禁用Guest用户">
-<meta name="twitter:description" content="1、打开终端 2、编辑50-no-guest.conf文件，按照以下命令编辑，  sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf  3、在打开的窗口中输入   [SeatDefaults] allow-guest=false   4、保存，重启系统，即可禁用Guest用户">
+<meta name="twitter:title" content="onmousemove和onmouseover事件的区别">
+<meta name="twitter:description" content="onmouseover 意思是如果鼠标指针在该元素的上面就触发onmousemove 意思是如果鼠标指针在该元素的上面移动就触发很显然，“物体A在物体B的上面”跟“物体A在物体B的上面移动”是两种完全不同的状态（或者说概念），前者不管怎么变化，只要物体A仍然在物体B的上面，这个状态就不会改变的，而后者就不同了，每一次移动都会造成坐标的改变，就是说每次移动都会造成状态改变的。总结以上所述就是：onm">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -144,39 +144,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-ubuntu16-04-禁用Guest用户" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-onmousemove和onmouseover事件的区别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      ubuntu16.04 禁用Guest用户
+      onmousemove和onmouseover事件的区别
     </h1>
   
 
         
-        <a href="/2017/05/22/ubuntu16-04-禁用Guest用户/" class="archive-article-date">
-  	<time datetime="2017-05-22T03:16:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
+        <a href="/2017/06/04/onmousemove和onmouseover事件的区别/" class="archive-article-date">
+  	<time datetime="2017-06-04T10:53:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、打开终端</p>
-<p>2、编辑50-no-guest.conf文件，按照以下命令编辑，</p>
-<blockquote>
-<p><code>sudo vim /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf</code></p>
-</blockquote>
-<p>3、在打开的窗口中输入</p>
-<blockquote>
-<ul>
-<li><code>[SeatDefaults]</code></li>
-<li><code>allow-guest=false</code></li>
-</ul>
-</blockquote>
-<p>4、保存，重启系统，即可禁用Guest用户</p>
+        <p>onmouseover 意思是如果鼠标指针在该元素的上面就触发<br>onmousemove 意思是如果鼠标指针在该元素的上面移动就触发<br>很显然，“物体A在物体B的上面”跟“物体A在物体B的上面移动”是两种完全不同的状态（或者说概念），前者不管怎么变化，只要物体A仍然在物体B的上面，这个状态就不会改变的，而后者就不同了，每一次移动都会造成坐标的改变，就是说每次移动都会造成状态改变的。<br>总结以上所述就是：onmouseover只触发一次（只要鼠标移动到元素上面就触发）；onmousemove会不断触发（只要鼠标在元素上面并且移动了鼠标就触发）。<br>一般情况下只需用onmouseover即可，特殊情况才用onmousemove（因为这个比较耗资源），比如需要监控鼠标坐标的变化。</p>
 
       
 
@@ -190,15 +178,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">备忘录</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">禁用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -217,15 +201,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/05/22/总结一下github（or-coding）-hexo搭建博客的心得/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          总结一下github（or coding）+hexo搭建博客的心得
-        
-      </div>
-    </a>
   
+    <a href="/2017/06/01/安装Docky/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安装Docky</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
